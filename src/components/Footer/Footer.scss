@@ -1,0 +1,51 @@
+@import "../../adaptive.scss";
+@import "../../_variables.scss";
+
+footer {
+  background-color: rgba(68, 75, 88, 1);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include respond-to(mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-nav-list {
+  display: flex;
+  @include respond-to(custom1200) {
+    margin-right: 30px;
+  }
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: $default-white-color;
+  text-align: center;
+}
+
+.nav-item a {
+  color: $default-white-color;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-nav {
+  border-bottom: none;
+  padding: 0;
+}

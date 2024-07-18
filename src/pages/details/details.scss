@@ -1,0 +1,203 @@
+@import "../../variables.scss";
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 42px 137px 63px 41px;
+}
+
+.details-general-block {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 59px;
+}
+
+.details-image {
+  width: 538px;
+  height: 565px;
+}
+
+.details-under-text {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: rgba(68, 75, 88, 1);
+}
+
+.details-under-block {
+  display: flex;
+  gap: 115px;
+}
+
+.text-description {
+  max-width: 430px;
+}
+
+.details-articul {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(178, 181, 187, 1);
+}
+
+.details-count-stock {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(68, 75, 88, 1);
+}
+
+.details-top-art-stock {
+  display: flex;
+  gap: 51px;
+  margin-bottom: 38px;
+}
+
+.details-title {
+  font-size: 24px;
+  line-height: 33.6px;
+  color: rgba(68, 75, 88, 1);
+  font-weight: 400;
+}
+
+.details-stars {
+  margin-bottom: 39px;
+}
+
+.details-size-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.details-size-item {
+  padding: 9px 26.5px;
+  border: 1px solid rgba(178, 181, 187, 1);
+  border-radius: 4px;
+}
+
+.details-stars-list {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 39px;
+}
+
+.details-prices {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 59px;
+  margin-bottom: 71px;
+}
+
+.details-current-price {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: rgba(68, 75, 88, 1);
+}
+
+.details-old-price {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba(178, 181, 187, 1);
+}
+
+.details-btn {
+  padding: 22px 181px;
+  border: 0;
+  color: white;
+  background-color: $buttom-primary-color;
+  border-radius: 4px;
+  margin-bottom: 21px;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  background-color: $buttom-hover-color;
+}
+
+.details-btn:active {
+  background-color: $buttom-active-color;
+}
+
+.details-item-tip:first-child {
+  margin-bottom: 13.05px;
+}
+
+.details-item-tip:nth-child(2) {
+  margin-bottom: 9px;
+}
+
+.details-item-tip {
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(178, 181, 187, 1);
+  font-weight: 400;
+}
+
+.details-galochka {
+  margin-right: 9.68px;
+  transform: translateY(3px);
+}
+
+.details-under-heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(68, 75, 88, 1);
+  margin: 0;
+}
+
+.details-description {
+  margin-top: 24px;
+}
+
+.noUi-origin:first-child {
+  left: 25px;
+}
+
+.sneaker-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 75, 88, 0.7);
+  z-index: 3;
+}
+
+.sneaker-details-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  width: 1180px;
+  overflow-y: auto;
+  border-radius: 4px;
+  z-index: 4;
+  margin-top: 120px;
+}
+
+.details-list-tip {
+  margin-top: 37px;
+}

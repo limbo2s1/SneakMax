@@ -1,0 +1,142 @@
+@import "../../adaptive.scss";
+@import "../../variables.scss";
+
+.question-form-block {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 82px;
+  @include respond-to(custom1195) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $background-color;
+  margin-top: 71px;
+  border-radius: 4px;
+}
+
+.question-form-input {
+  padding: 18px 247px 18px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+  border: none;
+  @include respond-to(mobile) {
+    padding: 18px 130px 18px 20px;
+  }
+}
+
+.question-form-heading {
+  margin-top: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $default-white-color;
+}
+
+.question-form-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $default-white-color;
+}
+
+.question-form-first {
+  margin-top: 40px;
+}
+
+.question-form-second {
+  margin-top: 10px;
+}
+
+.question-form-submit {
+  width: 91%;
+  padding: 22px 128px 22px 128px;
+  margin-top: 32px;
+  margin-bottom: 62px;
+  background-color: $buttom-primary-color;
+  border: none;
+  color: $default-white-color;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.question-form-submit:hover {
+  background-color: $buttom-hover-color;
+}
+
+.question-form-submit:active {
+  background-color: $buttom-active-color;
+}
+
+.error-message {
+  color: $error-message-color;
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.insta-block {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include respond-to(custom750to100) {
+    display: none;
+  }
+}
+
+#cssportal-grid {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 18px;
+  width: 100%;
+  height: auto;
+}
+
+#div1 {
+  grid-area: 1 / 3 / 3 / 5;
+  width: 330px;
+  height: 336px;
+}
+
+#div2 {
+  grid-area: 2 / 2 / 3 / 3;
+  width: 157px;
+  height: 160px;
+}
+
+#div3 {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 157px;
+  height: 160px;
+}
+
+#div4 {
+  grid-area: 1 / 5 / 2 / 6;
+  width: 157px;
+  height: 160px;
+}
+
+#div5 {
+  grid-area: 2 / 5 / 3 / 6;
+  width: 157px;
+  height: 160px;
+}
+
+#cssportal-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}

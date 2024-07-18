@@ -1,0 +1,62 @@
+@import "../../adaptive.scss";
+@import "../../variables.scss";
+.panel1-header {
+  margin-bottom: 0;
+}
+
+.accordion-custom {
+  max-width: 880px;
+  margin: 0 auto;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
+  box-shadow: none !important;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid $default-black-color;
+}
+
+.accordion-first {
+  border-top: 1px solid $default-black-color;
+}
+
+.questions-heading {
+  margin-top: 60px;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(68, 75, 88, 1);
+  margin-bottom: 40px;
+  @include respond-to(mobile) {
+    text-align: center;
+  }
+}
+
+.css-1086bdv-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin: 0 auto !important;
+}
+
+.accordion-first.expanded {
+  margin-top: 40px !important;
+}
+
+.questions-block {
+  margin-bottom: 40px;
+}
+
+.questions-head {
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(36, 36, 36, 1);
+}
+
+.questions-body {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: rgba(36, 36, 36, 0.5);
+}
+
+.MuiTypography-root,
+.MuiTypography-body1,
+.questions-head,
+.css-ahj2mt-MuiTypography-root {
+  color: $default-black-color !important;
+}

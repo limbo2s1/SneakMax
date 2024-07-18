@@ -1,0 +1,127 @@
+@import "../../adaptive.scss";
+@import "../../variables.scss";
+
+.modalBasket {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  width: 480px;
+  background-color: $default-white-color;
+  @include respond-to(mobile) {
+    max-width: 350px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.basket-btn {
+  padding: 22px 47px 22px 47px;
+  margin-top: 28px;
+  margin-right: 20px;
+  margin-bottom: 13px;
+  cursor: pointer;
+  @include respond-to(mobile) {
+    padding: 17px 17px 12px 17px;
+  }
+}
+
+.basket-btn:hover {
+  background-color: $buttom-hover-color;
+}
+
+.basket-btn:active {
+  background-color: $buttom-active-color;
+}
+
+.basket-itogo {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(77, 77, 77, 1);
+  margin-bottom: 10px;
+}
+
+.basket-price {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgba(77, 77, 77, 1);
+}
+
+.basket-under {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px -4px 10px 0px rgba(0, 13, 84, 0.1);
+}
+
+.basket-block-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 21px;
+}
+
+.basket-img {
+  height: 57px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.basket-product-title {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(77, 77, 77, 1);
+  font-weight: 400;
+}
+
+.basket-product-price {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgba(77, 77, 77, 1);
+}
+
+.basket-product-main {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+
+.basket-product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.basket-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket-sneakers {
+  max-height: 323px;
+  overflow: auto;
+}
+
+.basket-product-trash {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.basket-empty {
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+
+.back {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(68, 75, 88, 0.7);
+  z-index: 4;
+}

@@ -1,0 +1,79 @@
+@import "../../adaptive.scss";
+@import "../../variables.scss";
+.list-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  position: relative;
+  @include respond-to(custom750) {
+    .list-team {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  @include respond-to(custom600) {
+    .list-team {
+      flex: 1 1 calc(100% - 20px);
+    }
+  }
+}
+
+.team-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.list-team {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  position: relative;
+  @include respond-to(mobile) {
+    align-items: center;
+  }
+}
+
+.team-name {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: $default-white-color;
+}
+
+.team-role {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $default-white-color;
+}
+
+.team-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  color: $default-white-color;
+  @include respond-to(mobile) {
+    text-align: center;
+  }
+}
+
+.team-figure {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+.container-team {
+  z-index: 2;
+}

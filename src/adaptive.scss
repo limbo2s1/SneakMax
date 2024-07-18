@@ -1,0 +1,51 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (min-width: 375px) and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == custom1185 {
+    @media (max-width: 1185px) {
+      @content;
+    }
+  } @else if $breakpoint == custom1110 {
+    @media (max-width: 1110px) {
+      @content;
+    }
+  } @else if $breakpoint == custom550 {
+    @media (min-width: 375px) and (max-width: 550px) {
+      @content;
+    }
+  } @else if $breakpoint == custom750 {
+    @media (min-width: 600px) and (max-width: 750px) {
+      @content;
+    }
+  } @else if $breakpoint == custom600 {
+    @media (min-width: 375px) and (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == custom1195 {
+    @media (min-width: 375px) and (max-width: 1195px) {
+      @content;
+    }
+  } @else if $breakpoint == custom1200 {
+    @media (min-width: 1024px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoint == custom750to100 {
+    @media (min-width: 100px) and (max-width: 750px) {
+      @content;
+    }
+  } @else if $breakpoint == custom1220 {
+    @media (min-width: 375px) and (max-width: 1220px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../adaptive.scss";
+@import "../../variables.scss";
+
+.container-hero {
+  position: relative;
+  max-height: 465px;
+}
+
+.background-theme {
+  background-color: $background-color;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-heading {
+  padding-top: 100px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50.4px;
+  color: $default-white-color;
+  @include respond-to(mobile) {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: $default-white-color;
+  @include respond-to(mobile) {
+    text-align: center;
+  }
+}
+
+.hero-block {
+  max-width: 580px;
+  position: relative;
+  z-index: 1;
+  @include respond-to(mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.btn-hero-block {
+  @include respond-to(mobile) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.btn-hero {
+  margin-top: 40px;
+  padding: 22px 47px 22px 47px;
+  cursor: pointer;
+  margin-bottom: 100px;
+  @include respond-to(mobile) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.btn-hero:hover {
+  background-color: $buttom-hover-color;
+}
+
+.btn-hero:active {
+  background-color: $buttom-active-color;
+}
+
+.background-text {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.12);
+  font-size: 200px;
+  line-height: 200px;
+  transform: translate(50%, -160%);
+  z-index: 0;
+  width: 200px;
+  @include respond-to(mobile) {
+    display: none;
+  }
+}

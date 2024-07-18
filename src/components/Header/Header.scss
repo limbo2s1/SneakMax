@@ -1,0 +1,139 @@
+@import "../../adaptive.scss";
+@import "../../variables.scss";
+
+header {
+  padding: 20px 0 0;
+  background-color: $background-color;
+  color: $default-white-color;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.logo {
+  color: white;
+  font-family: "Intro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    align-self: center;
+
+    .btn-header {
+      display: flex;
+      align-items: center;
+      position: relative;
+      background-color: $background-color;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      gap: 10px;
+      cursor: pointer;
+
+      span {
+        position: absolute;
+        right: -8px;
+        bottom: -8px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: #f14f4f;
+        border-radius: 50%;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+.lines {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  border: 0;
+  background-color: $background-color;
+
+  span {
+    width: 30px;
+    height: 5px;
+    display: inline-block;
+    background-color: white;
+  }
+}
+
+@include respond-to(mobile) {
+  .logo {
+    z-index: 1005;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $background-color;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 300ms linear;
+
+    li {
+      font-size: 25px;
+      margin-bottom: 20px;
+
+      img {
+        width: 30px;
+      }
+    }
+
+    &.nav-open {
+      transform: translateY(0);
+    }
+  }
+
+  .lines {
+    display: flex;
+    z-index: 1001;
+    span {
+      transition: all 300ms linear;
+    }
+  }
+
+  .lines-open {
+    span:first-child {
+      transform: rotate(-45deg) translate(-6px, 8px);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:last-child {
+      transform: rotate(45deg) translate(-6px, -8px);
+    }
+  }
+}
+
+@include respond-to(mobile) {
+  .nav-item:not(:last-child) {
+    margin-right: 0;
+  }
+}

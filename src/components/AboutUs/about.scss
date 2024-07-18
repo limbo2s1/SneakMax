@@ -1,0 +1,93 @@
+@import "../../adaptive.scss";
+@import "../../_variables.scss";
+
+.about-general {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  @include respond-to(mobile) {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.about-figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+.about-block {
+  position: relative;
+  z-index: 1;
+  max-width: 50%;
+  @include respond-to(mobile) {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.about-block img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transform: skewX(-10deg);
+}
+
+.general-container {
+  position: relative;
+}
+
+.about-description {
+  margin-bottom: 20px;
+}
+
+.about-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 1);
+  @include respond-to(mobile) {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+  }
+}
+
+.about-description {
+  max-width: 380px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: $default-white-color;
+  @include respond-to(mobile) {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+  }
+}
+
+.mini-logo {
+  text-align: end;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: $default-white-color;
+  @include respond-to(mobile) {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+.about-img {
+  @include respond-to(mobile) {
+    display: none;
+  }
+}

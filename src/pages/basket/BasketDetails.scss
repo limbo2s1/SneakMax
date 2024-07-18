@@ -1,0 +1,160 @@
+@import "../../variables.scss";
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+  z-index: 10;
+}
+
+.basket-details-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+
+.basket-details-all-info {
+  border: 1px solid rgba(217, 217, 217, 1);
+  padding: 30px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.basket-details-heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(68, 75, 88, 1);
+}
+
+.basket-details-order {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(178, 181, 187, 1);
+}
+
+.basket-details-count {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(68, 75, 88, 1);
+}
+
+.basket-details-description {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(178, 181, 187, 1);
+}
+
+.basket-details-product {
+  margin-bottom: 20px;
+}
+
+.basket-details-structure {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(68, 75, 88, 1);
+  margin-bottom: 17px;
+}
+
+.basket-details-sostav {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.basket-details-sneakers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.basket-details-drop-down {
+  transform: translateY(5px);
+  transition: transform 0.3s;
+}
+
+.basket-details-drop-down.open {
+  transform: translateY(5px) rotate(180deg);
+}
+
+.basket-details-sneakers:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.basket-details-form {
+  width: 100%;
+}
+
+.basket-details-remove {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(178, 181, 187, 1);
+}
+
+.basket-details-input {
+  background-color: rgba(246, 246, 246, 1);
+  border: none;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  width: 96%;
+}
+
+.basket-details-input::placeholder {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: rgba(178, 181, 187, 1);
+}
+
+.basket-details-send {
+  padding: 22px 47px 22px 47px;
+  border: none;
+  background-color: $buttom-primary-color;
+  color: $default-white-color;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.basket-details-send:hover {
+  background-color: $buttom-hover-color;
+}
+
+.basket-details-send:active {
+  background-color: $buttom-active-color;
+}
+
+.basket-error-message {
+  margin-bottom: 10px;
+  color: $error-message-color;
+}
+
+.basket-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 75, 88, 0.7);
+  z-index: 2;
+}
+
+.basket-details-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  margin-top: 200px;
+  padding: 40px;
+  width: 580px;
+  z-index: 2;
+}
+
+.basket-details-main {
+  padding: 0;
+}
